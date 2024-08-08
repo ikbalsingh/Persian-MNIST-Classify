@@ -17,5 +17,5 @@ jobs:
       - name: Trigger Railway deployment
         uses: bervProject/railway-deploy@main
         with:
-          railway_token: b0767652-eed1-448f-9801-63f0ff8ed9b0
+          railway_token: 8e14ebf3-b45a-4140-8c29-fbd6db0ee06a
           service: "easygoing-contentment"
