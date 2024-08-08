@@ -10,7 +10,3 @@ jobs:
     steps:
       - name: Trigger deployment
         uses: sws2apps/render-deployment@main #consider using pin for dependabot auto update
-        with:
-          serviceId: srv-cq7lqb6ehbks7391fngg
-          apiKey: rnd_0aFxnJdWc42eJOfBTubJGjBkrqEM
-          multipleDeployment: false #optional, default true
