@@ -46,6 +46,8 @@ def downloadModel():
 @app.route("/predict", methods=['POST'])
 @cross_origin()
 def predictRoute():
+    if not os.path.exists("artifacts/training/model.h5"):
+        downloadModel() 
     image = request.json['image']
     decodeImage(image, clApp.filename)
     result = clApp.classifier.predict()
